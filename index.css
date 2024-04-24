@@ -3,11 +3,33 @@
   padding: 0;
 }
 
+#add-template-modal {
+  z-index: 1;
+  width: 80%;
+  height: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.5px solid grey;
+  border-radius: 15px;
+  padding: 9px;
+}
+
+#add-template-modal::backdrop {
+  background-color: black;
+  opacity: 75%;
+}
+
+#add-template-text {
+  border: 1px solid black
+}
+
 fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 250px;
+  height: 350px;
   width: 250px;
   margin: 15px;
 }
@@ -42,16 +64,16 @@ header {
   color: grey;
 }
 
-#template {
+.template {
   width: 240px;
   padding-bottom: 7px;
   border-bottom: 1px dotted black;
 }
 
-#template-title {
+.template-title {
   font-size: 16px;
   margin-bottom: 3px;
 }
-#template-text {
+.template-text {
   font-size: 10px;
 }
