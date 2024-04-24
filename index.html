@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <fieldset>
+      <legend>Templates</legend>
+      <header>
+        <input
+          type="search"
+          placeholder="Search templates..."
+          name="template-search"
+          id="template-search-element"
+          autofocus
+        />
+        <input type="button" value="Add Template" id="add-template-button" />
+      </header>
+      <div id="template-options">
+        <h1 id="template-title">The Title</h1>
+        <h3 id="template-text">
+          This is the template. Copy me bitch.
+        </h3>
+      </div>
+      <h3 id="no-templates" hidden>No Templates</h3>
+    </fieldset>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Template Extension",
+  "version": "1.0.0",
+  "description": "An extension for saving templates of responses to send out to customers, ready to be copied and pasted.",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["storage"]
+}

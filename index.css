@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 250px;
+  margin: 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
+  height: 20px;
+}
+
+#template-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-top: 10px;
+  width: 250px;
+  overflow-y: scroll;
+  padding-left: 25px;
+}
+
+#template-options::-webkit-scrollbar {
+  display: none;
+}
+
+#no-templates {
+  position: relative;
+  align-self: center;
+  top: 80px;
+  color: grey;
+}
+
+#template-title {
+  font-size: 18px;
+}
+#template-text {
+  font-size: 12px;
+}
