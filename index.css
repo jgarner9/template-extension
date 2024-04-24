@@ -6,6 +6,7 @@
 fieldset {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 250px;
   width: 250px;
   margin: 15px;
@@ -23,16 +24,15 @@ header {
 #template-options {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: left;
   padding-top: 10px;
   width: 250px;
   overflow-y: scroll;
-  padding-left: 25px;
+  padding-left: 5px;
 }
 
 #template-options::-webkit-scrollbar {
-  display: none;
+  visibility: hidden;
 }
 
 #no-templates {
@@ -42,9 +42,16 @@ header {
   color: grey;
 }
 
+#template {
+  width: 240px;
+  padding-bottom: 7px;
+  border-bottom: 1px dotted black;
+}
+
 #template-title {
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: 3px;
 }
 #template-text {
-  font-size: 12px;
+  font-size: 10px;
 }
