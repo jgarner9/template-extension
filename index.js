@@ -4,15 +4,17 @@ const templateOptionsElement = document.getElementById("template-options");
 const emptyTemplatesElement = document.getElementById("no-templates");
 const addTemplateButton = document.getElementById("add-template-button");
 const addTemplateModal = document.getElementById("add-template-modal");
+const closeTemplateModalButton = document.getElementById("close-button")
 
 const addTemplate = () => {
   addTemplateModal.showModal();
 };
 
-const editor = new EditorJS({
+new EditorJS({
   holder: "template-text-area",
   placeholder: "Template text...",
-  toolbar: { image: { inlineToolbar: ["link"] } },
+  inlineToolbar: true,
+  hideToolbar: true,
 });
 
 if (templateOptionsElement.children.length === 0) {
@@ -22,3 +24,4 @@ if (templateOptionsElement.children.length === 0) {
 }
 
 addTemplateButton.addEventListener("click", () => addTemplate());
+closeTemplateModalButton.addEventListener("click", () => addTemplateModal.close())
